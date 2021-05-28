@@ -1,6 +1,6 @@
 # mirror_me
 
-source code: drive link :- https://drive.google.com/drive/folders/1FsbiyhjEZoX3sCQAK_DVM2kP9bYp-rUv?usp=sharing
+source code: drive link :- https://drive.google.com/drive/folders/12i3cwfxdatdvyRPlYfTAL552A_4Y_U8B?usp=sharing
 
 dataset :- drive link :- https://drive.google.com/file/d/1t2N9kBLzZItjAe5K_UD5MX8eJEBbDtou/view?usp=sharing
 
@@ -38,3 +38,8 @@ to run the model with custom internet images, make sure you have the following:
 4) cloth-mask (binary mask of cloth image, you can generate it with simple pillow/opencv function)
 5) pose (pose keypoints of the person, generate with openpose COCO-18 model (OpenPose from the official repository is preferred))
 6) Also, make a test_pairs.txt file for your custom images. (accordingly).
+
+  ##
+ our project based on research paper of VITON
+
+
