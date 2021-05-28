@@ -7,15 +7,15 @@ dataset :- drive link :- https://drive.google.com/file/d/1t2N9kBLzZItjAe5K_UD5MX
 
 ## instruction to run	
 
-This pipeline is a combination of consecutive training and testing of GMM + TOM. GMM generates the warped clothes according to the target human. Then, TOM blends the warped clothes outputs from GMM into the target human properties, to generate the final try-on output.
+This pipeline is a combination of consecutive training and testing of GMM + TOM. GMM generates the wraped clothes according to the target human. Then, TOM blends the wraped clothes outputs from GMM into the target human properties, to generate the final try-on output.
 
 1) Install the requirements
 2) Download/Prepare the dataset
 3) Train GMM network
-4) Get warped clothes for training set with trained GMM network, and copy warped clothes & masks inside `data/train` directory
+4) Get wraped clothes for training set with trained GMM network, and copy wraped clothes & masks inside `data/train` directory
 5) Train TOM network
 6) Test GMM for testing set
-7) Get warped clothes for testing set, copy warped clothes & masks inside `data/test` directory
+7) Get wraped clothes for testing set, copy wraped clothes & masks inside `data/test` directory
 8) Test TOM testing set
 
 ## Installation
@@ -37,4 +37,4 @@ to run the model with custom internet images, make sure you have the following:
 3) cloth (in-shop cloth image, crop/resize to 192 x 256 (width x height) pixels)
 4) cloth-mask (binary mask of cloth image, you can generate it with simple pillow/opencv function)
 5) pose (pose keypoints of the person, generate with openpose COCO-18 model (OpenPose from the official repository is preferred))
-6) Also, make a test_pairs.txt file for your custom images. Follow the VITON dataset format to keep same arrangements, otherwise you can modify the code.
+6) Also, make a test_pairs.txt file for your custom images. (accordingly).
